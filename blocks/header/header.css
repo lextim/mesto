@@ -1,0 +1,7 @@
+.header {
+    border-bottom: 1px #545454 inset;
+    margin: 0 0 36px 0;
+    display: flex;
+    width: 100%;
+}
+

@@ -1,0 +1,9 @@
+.popup__form_text {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 13px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 30px;
+}

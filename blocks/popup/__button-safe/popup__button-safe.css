@@ -1,0 +1,11 @@
+.popup__button-safe {
+    width: 358px;
+    background: #000000;
+    border-radius: 2px;
+    margin: 18px 36px 36px 36px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}

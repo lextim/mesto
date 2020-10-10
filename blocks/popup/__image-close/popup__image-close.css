@@ -1,0 +1,6 @@
+.popup__image-close {
+    margin-right: 0;
+    position: absolute;
+    right: -47px;
+    top: -47px;
+}
