@@ -18,3 +18,9 @@
     background-image: url(../../../../image/Add\ Button_2.svg);
     }
 }
+
+.profile__button_add:hover {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    cursor: pointer;
+}

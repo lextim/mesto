@@ -9,3 +9,18 @@
     text-align: center;
     color: #FFFFFF;
 }
+
+.popup__button-safe:hover {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .popup__button-safe {
+    max-width: 238px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 18px 22px 25px 22px;
+    }
+}
