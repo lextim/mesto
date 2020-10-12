@@ -8,7 +8,8 @@
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
-}
+    border: 0;
+    }
 
 .popup__button-safe:hover {
     background: rgba(0, 0, 0, 0.8);
