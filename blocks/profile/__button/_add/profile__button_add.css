@@ -1,20 +1,14 @@
 .profile__button_add {
-    right: 0;
-    position: absolute;
-    margin-top: 35px;
     padding: 0;
-    width: 150px;
+    min-width: 150px;
     height: 50px;
     background-color: #000000;
     border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 2px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .profile__button_add {
-    position: relative;
-    width: 282px;
+    min-width: 282px;
     }
 }
 
@@ -22,4 +16,5 @@
     border: 2px solid rgba(255, 255, 255, 0.6);
     cursor: pointer;
     opacity: .6;
+    transition: ease;
 }

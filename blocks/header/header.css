@@ -1,6 +1,6 @@
 .header {
-    border-bottom: 1px #545454 inset;
-    margin: 0 0 36px 0;
+    border-bottom: 1px rgba(84, 84, 84, .7) inset;
+    margin: 0 0 38px 0;
     display: flex;
     width: 100%;
 }

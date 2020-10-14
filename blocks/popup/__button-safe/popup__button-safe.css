@@ -2,18 +2,20 @@
     width: 358px;
     background: #000000;
     border-radius: 2px;
-    margin: 18px 36px 36px 36px;
+    margin: 18px 0px 36px 0px;
     height: 50px;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
     border: 0;
+    padding: 0;
     }
 
 .popup__button-safe:hover {
     background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+    transition: ease;
 }
 
 @media screen and (max-width: 500px) {
@@ -22,6 +24,5 @@
     width: 100%;
     font-size: 14px;
     line-height: 17px;
-    margin: 18px 22px 25px 22px;
     }
 }

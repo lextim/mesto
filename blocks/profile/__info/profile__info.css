@@ -1,12 +1,18 @@
 .profile__info {
     margin-left: 26px;
-    max-width: 336px;
-    position: relative;
     width: 100%;
+    display: grid;
+    grid-template-columns: 295px 24px;
+    gap: 16px 17px;
+    grid-area: auto;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
     .profile__info {
+    grid-template-columns: max-content 18px;
+    gap: 0 14px;
     margin-left: 0;
+    justify-content: center;
+    margin-bottom: 36px;
     }
 }

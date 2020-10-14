@@ -5,4 +5,11 @@
     height: 18px;
     margin-top: 31px;
     margin-right: 30px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.element__like:hover {
+    cursor: pointer;
+    opacity: .6;
+    transition: ease;
 }
