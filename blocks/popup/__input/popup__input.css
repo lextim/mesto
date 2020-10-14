@@ -4,11 +4,17 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     max-width: 100%;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 1px rgba(84, 84, 84, .2) inset;
     width: 358px;
+}
+
+@media screen and (max-width: 700px) {
+    .popup__input {
+        margin-bottom: 25px;
+    }
 }

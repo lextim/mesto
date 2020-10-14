@@ -19,8 +19,8 @@
 
 @media screen and (max-width: 530px) {
     .popup__image-close {
-        right: 0;
-        top: -61px;
+        right: -10px;
+        top: -51px;
         transform: rotate(0deg);
     }
 }
