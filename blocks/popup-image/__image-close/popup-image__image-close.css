@@ -1,0 +1,26 @@
+.popup-image__image-close {
+    margin-right: 0;
+    position: absolute;
+    right: -47px;
+    top: -47px;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    z-index: -1;
+    padding: 0;
+    border: 0;
+}
+
+.popup-card__image-close:hover {
+    cursor: pointer;
+    opacity: .6;
+    transition: 1s ease;
+}
+
+@media screen and (max-width: 530px) {
+    .popup-card__image-close {
+        right: -10px;
+        top: -51px;
+        transform: rotate(0deg);
+    }
+}

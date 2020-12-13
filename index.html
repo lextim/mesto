@@ -22,48 +22,6 @@
             </section>
             <section class="element-section">
                 <ul class="elements">
-                    <li class="element">
-                        <img class="element__image" src="image/element/karachaevsk.png" alt="Карачаевск">
-                        <div class="element__group">
-                            <h2 class="element__text">Карачаевск</h2>
-                            <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__image" src="image/element/elbrus.png" alt="Эльбрус">
-                        <div class="element__group">
-                            <h2 class="element__text">Гора Эльбрус</h2>
-                            <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__image" src="image/element/dombay.png" alt="Домбай">
-                        <div class="element__group">
-                            <h2 class="element__text">Домбай</h2>
-                            <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__image" src="image/element/elbrus.png" alt="Эльбрус">
-                        <div class="element__group">
-                            <h2 class="element__text">Гора Эльбрус</h2>
-                            <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__image" src="image/element/dombay.png" alt="Домбай">
-                        <div class="element__group">
-                            <h2 class="element__text">Домбай</h2>
-                            <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__image" src="image/element/karachaevsk.png" alt="Карачаевск">
-                        <div class="element__group">
-                            <h2 class="element__text">Карачаево-Черкессия</h2>
-                            <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
-                        </div>
-                    </li>
                 </ul>
             </section>
         </main>
@@ -81,6 +39,32 @@
                 </form>
             </div>
         </section>
+        <section class="popup-card">
+            <div class="popup-card__container">
+                <button class="popup-card__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
+                <h2 class="popup-card__title">Новое место</h2>
+                <form class="popup-card__form" name="profile-card_name">
+                    <input type="text" class="popup-card__input" id="namecard" required name="place_name">
+                    <input type="url" class="popup-card__input" id="urlcard" required name="place_url">
+                    <button type="submit" class="popup-card__button-safe" id="safePlace">Сохранить</button>
+                </form>
+            </div>
+        </section>
+        <section class="popup-image">
+                <button class="popup-image__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
+                <img class="popup-image__pic" src="" alt="">
+                <p class="popup-image__alt">Новое место</p>
+        </section>
+        <template id="element__templade"> 
+            <li class="element">
+            <img class="element__image" alt="" src="">
+            <div class="element__group">
+            <h2 class="element__text"></h2>
+                <button class="element__trash" type="button"><img src="./image/Trash.svg" alt="Корзинка"></button>
+                <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
+            </div>
+            </li>
+        </template>
         <script src="./scripts/index.js"></script>
     </body>
 </html>
