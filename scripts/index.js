@@ -75,8 +75,8 @@ formCard.addEventListener('submit', (evt) => {
 
 
 const fullPhoto = (item) => {
-    const text = popup - image.querySelector(`.popup-image__pic`);
-    const img = popup - image.querySelector(`.popup-image__alt`);
+    const text = popupImageAlt.querySelector(`.popup-image__alt`);
+    const img = popupImagePic.querySelector(`.popup-image__pic`);
     text.textContent = item.name;
     img.src = item.link;
 };
