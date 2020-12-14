@@ -13,6 +13,8 @@ let formCard = document.querySelector('.popup-card__form');
 let placeInput = document.querySelector('#namecard');
 let urlInput = document.querySelector('#urlcard');
 const popupImage = document.querySelector('.popup-image');
+const popupImagePic = document.querySelector('.popup-image__pic');
+const popupImageAlt = document.querySelector('.popup-image__alt');
 const initialCards = [{
         name: 'Архыз',
         link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
@@ -42,13 +44,6 @@ const initialCards = [{
 const elementCards = document.querySelector(".elements");
 const elementCard = document.querySelector("#element__templade").content;
 
-const fullPhoto = (item) => {
-    const text = popup - image.querySelector(`.popup-image__pic`);
-    const img = popup - image.querySelector(`.popup-image__alt`);
-    text.textContent = item.name;
-    img.src = item.link;
-};
-
 function newCard(item, flag = true) {
     const cardElement = elementCard.cloneNode(true);
     cardElement.querySelector('.element__image').src = item.link;
@@ -64,7 +59,7 @@ function newCard(item, flag = true) {
         card.remove();
     });
     photo.addEventListener('click', () => {
-        fullPhoto(item);
+        fullPhoto();
         openPopupImage();
     });
     flag ? elementCards.append(cardElement) : elementCards.prepend(cardElement);
@@ -76,6 +71,15 @@ formCard.addEventListener('submit', (evt) => {
     newCard(oneNewPlace, false);
     closePopupCard()
 })
+
+
+const fullPhoto = (event) => {
+    openPopupImage(event);
+    const imageTarget = document.querySelector('.element__image');
+    const altTarget = document.querySelector('.element__text');
+    imageTarget = popupImagePic.src;
+    altTarget = popupImageAlt.textContent;
+};
 
 function openPopup() {
     nameInput.value = profileTitle.textContent;
