@@ -59,11 +59,12 @@ function newCard(item, flag = true) {
         card.remove();
     });
     photo.addEventListener('click', () => {
-        fullPhoto();
+        fullPhoto(item);
         openPopupImage();
     });
     flag ? elementCards.append(cardElement) : elementCards.prepend(cardElement);
 }
+
 
 formCard.addEventListener('submit', (evt) => {
     evt.preventDefault();
@@ -73,12 +74,11 @@ formCard.addEventListener('submit', (evt) => {
 })
 
 
-const fullPhoto = (event) => {
-    openPopupImage(event);
-    const imageTarget = document.querySelector('.element__image');
-    const altTarget = document.querySelector('.element__text');
-    imageTarget = popupImagePic.src;
-    altTarget = popupImageAlt.textContent;
+const fullPhoto = (item) => {
+    const text = popup - image.querySelector(`.popup-image__pic`);
+    const img = popup - image.querySelector(`.popup-image__alt`);
+    text.textContent = item.name;
+    img.src = item.link;
 };
 
 function openPopup() {
