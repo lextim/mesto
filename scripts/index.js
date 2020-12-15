@@ -13,8 +13,9 @@ let formCard = document.querySelector('.popup-card__form');
 let placeInput = document.querySelector('#namecard');
 let urlInput = document.querySelector('#urlcard');
 const popupImage = document.querySelector('.popup-image');
-const popupImagePic = document.querySelector('.popup-image__pic');
-const popupImageAlt = document.querySelector('.popup-image__alt');
+const buttonClosePopupImage = document.querySelector('.popup-image__image-close');
+/*const popupImagePic = document.querySelector('.popup-image__pic');
+const popupImageAlt = document.querySelector('.popup-image__alt');*/
 const initialCards = [{
         name: 'Архыз',
         link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
@@ -75,8 +76,8 @@ formCard.addEventListener('submit', (evt) => {
 
 
 const fullPhoto = (item) => {
-    const text = popupImageAlt.querySelector(`.popup-image__alt`);
-    const img = popupImagePic.querySelector(`.popup-image__pic`);
+    const text = popupImage.querySelector(`.popup-image__alt`);
+    const img = popupImage.querySelector(`.popup-image__pic`);
     text.textContent = item.name;
     img.src = item.link;
 };
@@ -92,7 +93,7 @@ function openPopupCard() {
 }
 
 function openPopupImage() {
-    popupImage.classList.toggle("element__image");
+    popupImage.classList.toggle("popup-image_is-opened");
 }
 
 function closePopupCard() {
@@ -104,7 +105,7 @@ function closePopup() {
 }
 
 function closePopupImage() {
-    popupImage.classList.toggle("element__image");
+    popupImage.classList.toggle("popup-image_is-opened");
 }
 
 
@@ -122,4 +123,5 @@ buttonOpenPopupCard.addEventListener("click", openPopupCard);
 buttonOpenPopup.addEventListener("click", openPopup);
 buttonClosePopup.addEventListener("click", closePopup);
 buttonClosePopupCard.addEventListener("click", closePopupCard);
+buttonClosePopupImage.addEventListener("click", closePopupImage);
 form.addEventListener('submit', formSubmitHandler);
