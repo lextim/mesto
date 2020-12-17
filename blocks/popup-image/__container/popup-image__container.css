@@ -1,8 +1,6 @@
 .popup-image__container {
-    background: #FFFFFF;
-    border-radius: 10px;
     position: relative;
-    max-width: 430px;
+    max-width: 750px;
     width: 100%;
 }
 
