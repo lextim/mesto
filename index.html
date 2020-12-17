@@ -46,8 +46,8 @@
             <button class="popup-card__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
             <h2 class="popup-card__title">Новое место</h2>
             <form class="popup-card__form" name="profile-card_name">
-                <input type="text" class="popup-card__input" id="namecard" required name="place_name">
-                <input type="url" class="popup-card__input" id="urlcard" required name="place_url">
+                <input type="text" class="popup-card__input" id="namecard" required name="place_name" value="Название">
+                <input type="url" class="popup-card__input" id="urlcard" required name="place_url" value="Ссылка на картинку">
                 <button type="submit" class="popup-card__button-safe" id="safePlace">Сохранить</button>
             </form>
         </div>
@@ -59,16 +59,16 @@
             <p class="popup-image__alt"></p>
         </div>
     </section>
-    <template id="element__templade"> 
-            <li class="element">
+    <template id="element__templade">
+        <li class="element">
             <img class="element__image" alt="" src="">
+            <button class="element__trash" type="button"><img src="./image/Trash.svg" alt="Корзинка"></button>
             <div class="element__group">
-            <h2 class="element__text"></h2>
-                <button class="element__trash" type="button"><img src="./image/Trash.svg" alt="Корзинка"></button>
+                <h2 class="element__text"></h2>
                 <button class="element__like" type="button"><img src="./image/Vector.svg" alt="Сердечко"></button>
             </div>
-            </li>
-        </template>
+        </li>
+    </template>
     <script src="./scripts/index.js"></script>
 </body>
 
