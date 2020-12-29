@@ -30,7 +30,7 @@
     <footer class="footer">
         <p class="footer__author">&copy; 2020 Mesto Russia</p>
     </footer>
-    <section class="popup">
+    <section class="popup popup-profile">
         <div class="popup__container">
             <button class="popup__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
@@ -41,25 +41,25 @@
             </form>
         </div>
     </section>
-    <section class="popup-card">
-        <div class="popup-card__container">
-            <button class="popup-card__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
+    <section class="popup popup-card">
+        <div class="popup__container popup-card__container">
+            <button class="popup__image-close popup-card__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
             <h2 class="popup-card__title">Новое место</h2>
             <form class="popup-card__form" name="profile-card_name">
                 <input type="text" class="popup-card__input" id="namecard" required name="place_name" value="Название">
                 <input type="url" class="popup-card__input" id="urlcard" required name="place_url" value="Ссылка на картинку">
-                <button type="submit" class="popup-card__button-safe" id="safePlace">Сохранить</button>
+                <button type="submit" class="popup__button-safe popup-card__button-safe" id="safePlace">Сохранить</button>
             </form>
         </div>
     </section>
-    <section class="popup-image">
+    <section class="popup popup-image">
         <div class="popup-image__container">
-            <button class="popup-image__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
+            <button class="popup__image-close popup-image__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
             <img class="popup-image__pic" src="image/element/elbrus.png" alt="изображение">
             <p class="popup-image__alt"></p>
         </div>
     </section>
-    <template id="element__templade">
+    <template id="template">
         <li class="element">
             <img class="element__image" src="image/element/elbrus.png" alt="изображение">
             <button class="element__trash" type="button"><img src="./image/Trash.svg" alt="Корзинка"></button>
