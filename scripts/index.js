@@ -137,7 +137,7 @@ function formSubmitHandler(evt) {
     evt.preventDefault();
     profileTitle.textContent = nameInput.value;
     profileSubtitle.textContent = jobInput.value;
-    closePopup();
+    closePopup(popupProfile);
 }
 
 
