@@ -24,6 +24,7 @@ const initialCards = [{
     }
 ];
 
+const ESCAPE = `Escape`;
 const popupProfile = document.querySelector('.popup-profile');
 const popupCard = document.querySelector('.popup-card');
 const popupImage = document.querySelector('.popup-image');
@@ -104,6 +105,11 @@ function closePopup(popup) {
     popup.classList.remove("popup_is-opened");
 }
 
+function closeEscape (button) {
+    if (button.key === "ESCAPE");
+
+        closePopupProfile()
+}
 
 function openPopupProfile() {
     nameInput.value = profileTitle.textContent;

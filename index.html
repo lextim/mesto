@@ -34,9 +34,11 @@
         <div class="popup__container">
             <button class="popup__image-close popup-profile__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form popup-profile__form" name="profile_name">
-                <input type="text" class="popup__input popup-profile__input" id="title" required name="first_name">
-                <input type="text" class="popup__input popup-profile__input" id="subtitle" required name="job_name">
+            <form class="popup__form popup-profile__form" name="profile_name" autocomplete="off" novalidate action="#">
+                <label for="title"></label><input type="text" class="popup__input popup-profile__input" id="title" required name="first_name" minlength="2" maxlength="40">
+                <span class="popup__input-error" id="title-error"></span>
+                <input type="text" class="popup__input popup-profile__input" id="subtitle" required name="job_name" minlength="2" maxlength="200">
+                <span class="popup__input-error" id="subtitle-error"></span>
                 <button type="submit" class="popup__button-safe popup-profile__button-safe" id="safe">Сохранить</button>
             </form>
         </div>
@@ -45,9 +47,11 @@
         <div class="popup__container popup-card__container">
             <button class="popup__image-close popup-card__image-close" type="button"><img src="./image/CloseIcon.svg" alt="Закрытие_попапа"></button>
             <h2 class="popup-card__title">Новое место</h2>
-            <form class="popup__form popup-card__form" name="profile-card_name">
-                <input type="text" class="popup__input popup-card__input" id="namecard" required name="place_name" placeholder="Название">
-                <input type="url" class="popup__input popup-card__input" id="urlcard" required name="place_url" placeholder="Ссылка на картинку">
+            <form class="popup__form popup-card__form" name="profile-card_name" autocomplete="off" novalidate>
+                <input type="text" class="popup__input popup-card__input" id="namecard" required name="place_name" placeholder="Название" minlength="2" maxlength="30">
+                <span class="popup__input-error" id="namecard-error"></span>
+                <input type="url" class="popup__input popup-card__input" id="urlcard" required name="place_url" placeholder="Ссылка на картинку" >
+                <span class="popup__input-error" id="urlcard-error"></span>
                 <button type="submit" class="popup__button-safe popup-card__button-safe" id="safePlace">Сохранить</button>
             </form>
         </div>
@@ -70,6 +74,7 @@
         </li>
     </template>
     <script src="./scripts/index.js"></script>
+    <script src="scripts/validate.js"></script>
 </body>
 
 </html>
